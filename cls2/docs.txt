@@ -23,6 +23,11 @@ Q 2) changing the ip address:-
 ---------------------------------
 	changed the ip to '192.168.1.10' , and internet stopped working.
 	It's again back to perform after resetting the  original ip.
+	
+Q 3) changing the mac address
+---------------------------------
+	Its hardware based so due to system restrictions can't do so.
+	Tried using some virtual tools but didn't work out.
 
 Q 4) ping gateway
 -----------------
