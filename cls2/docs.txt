@@ -1,1 +1,80 @@
+class 2: ubuntu
+=======================================
+Q 1)show details:-
+-----------------------
+	IP Address :-
+		# ifconfig
+		192.168.43.78    
+	MAC Address:-
+		# ifconfig | grep HWaddr
+		b8:ca:3a:b2:df:e1
+	Subnet address:-
+		# mask in ethernet ifconfig
+		Mask:255.255.252.0
+	Gateway address:-
+		#route -n
+		192.168.40.1
+	#$#
+	14.139.208.84
+	Your public IP address
+	//online
+		
+Q 2) changing the ip address:-
+---------------------------------
+	changed the ip to '192.168.1.10' , and internet stopped working.
+	It's again back to perform after resetting the  original ip.
 
+Q 4) ping gateway
+-----------------
+	ping 192.168.40.1
+	PING 192.168.40.1 (192.168.40.1) 56(84) bytes of data.
+	64 bytes from 192.168.40.1: icmp_seq=1 ttl=64 time=0.456 ms
+	64 bytes from 192.168.40.1: icmp_seq=2 ttl=64 time=0.261 ms
+	64 bytes from 192.168.40.1: icmp_seq=3 ttl=64 time=0.324 ms
+	64 bytes from 192.168.40.1: icmp_seq=4 ttl=64 time=0.268 ms
+	64 bytes from 192.168.40.1: icmp_seq=5 ttl=64 time=0.345 ms
+	64 bytes from 192.168.40.1: icmp_seq=6 ttl=64 time=0.356 ms
+	------------------------------------------------------------
+	------------------------------------------------------------
+	64 bytes from 192.168.40.1: icmp_seq=55 ttl=64 time=0.367 ms
+	64 bytes from 192.168.40.1: icmp_seq=56 ttl=64 time=0.319 ms
+	^C
+	--- 192.168.40.1 ping statistics ---
+	56 packets transmitted, 56 received, 0% packet loss, time 55003ms
+	rtt min/avg/max/mdev = 0.244/0.385/2.766/0.375 ms
+
+Q 5,6) 
+----------------- 
+	Scripts//
+		sender.py 
+		receiver.py 
+	
+	After changing the port, the chat-programs are running in both the systems but they are not communicating among themselves. 
+
+
+
+Q 7) Tested the network connectivity of your system by the loop back address:-
+	
+	e.g.//
+	------
+	sw2@sw2-OptiPlex-9020:~$ ping 127.0.0.1
+	PING 127.0.0.1 (127.0.0.1) 56(84) bytes of data.
+	64 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.045 ms
+	64 bytes from 127.0.0.1: icmp_seq=2 ttl=64 time=0.029 ms
+	64 bytes from 127.0.0.1: icmp_seq=3 ttl=64 time=0.048 ms
+	64 bytes from 127.0.0.1: icmp_seq=4 ttl=64 time=0.047 ms
+	64 bytes from 127.0.0.1: icmp_seq=5 ttl=64 time=0.040 ms
+	64 bytes from 127.0.0.1: icmp_seq=6 ttl=64 time=0.027 ms
+	^C
+	--- 127.0.0.1 ping statistics ---
+	6 packets transmitted, 6 received, 0% packet loss, time 5000ms
+	rtt min/avg/max/mdev = 0.027/0.039/0.048/0.009 ms
+	
+Q 8) Bandwith
+--------------------
+	Bandwith of the network is 7.8mbps(download) and 5.9mbps(upload)
+
+
+
+	
+	
